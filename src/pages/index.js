@@ -3,14 +3,9 @@ import React from 'react'
 export default function index() {
   return (
 
-    <div>
-
-      <div className='flex text-2xl h-screen items-center justify-center'>Mario CI/CD
-      
-      Mario
-    
-      </div>
-
+    <div className='h-screen flex flex-col text-2xl items-center justify-center'>
+      <p>CI/CD</p>
+      <p className='text-blue-500'>Mario test</p>
     </div>
    
     
