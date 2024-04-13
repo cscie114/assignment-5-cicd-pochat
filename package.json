@@ -13,7 +13,8 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "lint": "eslint --ext js,jsx src"
+    "lint": "eslint --ext js,jsx src",
+    "test": "jest"
   },
   "dependencies": {
     "autoprefixer": "^10.4.19",
@@ -23,5 +24,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "tailwindcss": "^3.4.3"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
   }
 }

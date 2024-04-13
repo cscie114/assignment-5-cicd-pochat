@@ -6,6 +6,7 @@ export default function index() {
     <div className='h-screen flex flex-col text-2xl items-center justify-center'>
       <p>CI/CD</p>
       <p className='text-blue-500'>Mario test Lint</p>
+      <p className='text-blue-500'>Added Jest</p>
     </div>
    
     
