@@ -3,8 +3,8 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `cicd-mario`,
+    title: `My Gatsby Site`,
     siteUrl: `https://www.yourdomain.tld`
   },
-  plugins: ["gatsby-plugin-netlify-cms", "gatsby-plugin-postcss"]
+  plugins: ["gatsby-plugin-postcss"]
 };
