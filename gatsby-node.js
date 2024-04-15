@@ -16,7 +16,7 @@ exports.sourceNodes = async ({
   const resultData = await result.json();
 
   console.log("Result Data:");
-  console.log(resultData); // Log the resultData to see its structure
+  console.log(resultData); // Log resultData
 
   // If resultData.items is undefined, exit early to avoid the error
   if (!resultData.items) {
@@ -32,6 +32,7 @@ exports.sourceNodes = async ({
       title: item.snippet.title,
       description: item.snippet.description,
       id: item.id,
+      videoId: item.snippet.resourceId.videoId,
       parent: null,
       children: [],
       internal: {
