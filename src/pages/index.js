@@ -1,25 +1,31 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import Layout from '../components/Layout'
 
 export default function IndexPage({ data }) {
   return (
-    <div className='h-screen flex flex-col text-2xl items-center justify-center'>
-      <p>CI/CD</p>
-      <p className='text-red-500'>Mario test Lint</p>
-      <p className='text-blue-500'>Added Jest</p>
-      <p className='text-green-500'>To netlify.yml</p>
-      <p className='text-purple-500'>Added Secrets to Git</p>
-      <p className='text-purple-500'>Added Env to Netlify</p>
-
-      <h1>Fetching videos from Youtube API:</h1>
+    <Layout>
+    <div className=''>
+      <h1 className="text-center text-3xl font-bold mb-8 mt-8">Fetching videos with the Youtube API:</h1>
 
       {/* Render the fetched video titles */}
-      <ul>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {data.allYoutubeVideo.nodes.map(node => (
-          <li key={node.title}>{node.title}</li>
+          <div key={node.title} className="bg-white shadow-md rounded-md p-4">
+            <h2 className="text-xl font-semibold mb-2">{node.title}</h2>
+            <iframe
+              width="100%"
+              height="315"
+              src={`https://www.youtube.com/embed/${node.videoId}`}
+              title={node.title}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
+    </Layout>
   )
 }
 
@@ -29,6 +35,8 @@ export const query = graphql`
     allYoutubeVideo {
       nodes {
         title
+        videoId
+        videoThumbnail
       }
     }
   }

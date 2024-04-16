@@ -33,6 +33,7 @@ exports.sourceNodes = async ({
       description: item.snippet.description,
       id: item.id,
       videoId: item.snippet.resourceId.videoId,
+      videoThumbnail: item.snippet.thumbnails.maxres.url,
       parent: null,
       children: [],
       internal: {
