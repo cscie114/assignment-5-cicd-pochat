@@ -9,7 +9,7 @@ export default function IndexPage({ data }) {
       <p className='text-blue-500'>Added Jest</p>
       <p className='text-green-500'>To netlify.yml</p>
 
-      <h1>Fetching various videos from Youtube API:</h1>
+      <h1>Fetching videos from Youtube API:</h1>
 
       {/* Render the fetched video titles */}
       <ul>
