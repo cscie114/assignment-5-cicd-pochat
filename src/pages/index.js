@@ -8,7 +8,8 @@ export default function IndexPage({ data }) {
       <p className='text-red-500'>Mario test Lint</p>
       <p className='text-blue-500'>Added Jest</p>
       <p className='text-green-500'>To netlify.yml</p>
-      <p className='text-purple-500'>Added Secrets</p>
+      <p className='text-purple-500'>Added Secrets to Git</p>
+      <p className='text-purple-500'>Added Env to Netlify</p>
 
       <h1>Fetching videos from Youtube API:</h1>
 
