@@ -1,5 +1,9 @@
 # .github/workflows/netlify.yml
 name: Build and Deploy to Netlify
+env: 
+  GATSBY_YOUTUBE_API: ${{ secrets.GATSBY_YOUTUBE_API }}
+  GATSBY_CHANNEL_ID: ${{ secrets.GATSBY_CHANNEL_ID }}
+  GATSBY_UPLOADS_ID: ${{ secrets.GATSBY_UPLOADS_ID }}
 on:
   push:
   pull_request:
@@ -27,7 +31,4 @@ jobs:
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-          GATSBY_CHANNEL_ID: ${{ secrets.GATSBY_CHANNEL_ID }}
-          GATSBY_UPLOADS_ID: ${{ secrets.GATSBY_UPLOADS_ID }}
-          GATSBY_YOUTUBE_API: ${{ secrets.GATSBY_YOUTUBE_API }}
         timeout-minutes: 1
