@@ -8,7 +8,7 @@ exports.sourceNodes = async ({
   createContentDigest,
 }) => {
   // get data from YouTube API at build time
-  const result = await fetch(`https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=5&playlistId=UUQeRaTukNYft1_6AZPACnog&key=${process.env.GATSBY_YOUTUBE_API}`)
+  const result = await fetch(`https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=6&playlistId=UUQeRaTukNYft1_6AZPACnog&key=${process.env.GATSBY_YOUTUBE_API}`)
 
   console.log("result");
   console.log(result);
