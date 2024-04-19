@@ -4,5 +4,8 @@
   "version": "1.0.0",
   "private": true,
   "author": "Netlify",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@netlify/plugin-gatsby": "3.8.1"
+  }
 }
