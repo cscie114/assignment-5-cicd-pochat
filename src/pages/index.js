@@ -7,11 +7,11 @@ export default function IndexPage({ data }) {
 
   const helloClick = async () => {
     try {
-      const response = await fetch('/.netlify/functions/hello-mario/hello-mario'); 
+      const response = await fetch('/.netlify/functions/hello'); 
       console.log("response:", response);
       const responseData = await response.json();
       console.log("responseData:", responseData);
-      setMessage(responseData.message); // Update to use responseData.message
+      setMessage(responseData.hello); // Corrected this line
     } catch (error) {
       console.error('Error fetching message:', error);
     }
