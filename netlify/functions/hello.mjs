@@ -1,3 +1,4 @@
+
 exports.handler = async () => {
 
   const data = { hello: 'Mario, you made a serverless function! ;) '};
