@@ -1,0 +1,19 @@
+{
+	"geolocation": {
+		"data": {
+			"city": "Burnaby",
+			"country": {
+				"code": "CA",
+				"name": "Canada"
+			},
+			"subdivision": {
+				"code": "BC",
+				"name": "British Columbia"
+			},
+			"timezone": "America/Vancouver",
+			"latitude": 49.2292,
+			"longitude": -122.9932
+		},
+		"timestamp": 1713492939150
+	}
+}

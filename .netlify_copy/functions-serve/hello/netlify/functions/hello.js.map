@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../Users/mariopochat/HarvardCsciE-114/assignment-5-cicd-pochat/netlify/functions/hello.mjs"],
+  "sourceRoot": "/var/folders/2k/crgjv6cx2kzdgh3fg53g_80c0000gn/T/tmp-7022-E72hCcgfN83N",
+  "sourcesContent": ["\nexports.handler = async () => {\n\n  const data = { hello: 'Mario, you made a serverless function! ;) '};\n\n  return {\n    statusCode: 200,\n    body: JSON.stringify(data),\n  };\n};\n"],
+  "mappings": ";AACA,QAAQ,UAAU,YAAY;AAE5B,QAAM,OAAO,EAAE,OAAO,6CAA4C;AAElE,SAAO;AAAA,IACL,YAAY;AAAA,IACZ,MAAM,KAAK,UAAU,IAAI;AAAA,EAC3B;AACF;",
+  "names": []
+}
