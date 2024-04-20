@@ -1,4 +1,3 @@
-# .github/workflows/netlify.yml
 name: Build and Deploy to Netlify
 env: 
   GATSBY_YOUTUBE_API: ${{ secrets.GATSBY_YOUTUBE_API }}
@@ -17,8 +16,7 @@ jobs:
       - run: npm ci
       - run: npm run lint
       - run: npm run test
-      - run: netlify init
-      - run: netlify build
+      - run: npm run build
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v3.0
         with:
@@ -33,3 +31,7 @@ jobs:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         timeout-minutes: 1
+      - name: Install Netlify CLI
+        run: npm install -g netlify-cli
+      - name: Deploy to Netlify using CLI
+        run: netlify deploy --site ${{ secrets.NETLIFY_SITE_ID }} --auth ${{ secrets.NETLIFY_AUTH_TOKEN }} --prod
