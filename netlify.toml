@@ -1,4 +1,0 @@
-[build]
-  command = "netlify deploy --prod"
-  functions = "netlify/functions"
-  publish = "public"

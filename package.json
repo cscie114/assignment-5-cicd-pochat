@@ -27,6 +27,7 @@
   },
   "devDependencies": {
     "jest": "^29.7.0",
+    "netlify-cli": "^17.22.1",
     "node-fetch": "^2.7.0"
   },
   "main": ".eslintrc.js",
