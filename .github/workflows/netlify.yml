@@ -17,7 +17,7 @@ jobs:
       - run: npm ci
       - run: npm run lint
       - run: npm run test
-      - run: npm run build
+      - run: netlify build
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v3.0
         with:
