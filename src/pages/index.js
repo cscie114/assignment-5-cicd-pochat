@@ -20,7 +20,7 @@ export default function IndexPage({ data }) {
   return (
     <Layout>
       <div className=''>
-        <h1 className="text-center text-3xl font-bold mb-8 mt-8">Fetching 6 videos with the Youtube API:</h1>
+        <h1 className="text-center text-3xl font-bold mb-8 mt-8">The unit test should return 6 videos from the Youtube API:</h1>
         <button onClick={helloClick} className='flex m-auto p-5 bg-slate-200'>Click to run the serverless function</button>
         <p className='flex font-bold text-red-500 items-center justify-center p-5'>{ message }</p>
 
